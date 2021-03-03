@@ -16,7 +16,7 @@
       <tr>
         <th scope="row">{{$item->id}}</th>
         <td>{{$item->receiver}}</td>
-        <td>{{$bill->payment_status ? 'مسدده' : 'غير مسدده'}}</td>
+        <td>{{$item->payment_status ? 'مسدده' : 'غير مسدده'}}</td>
         <td>{{$item->total}}</td>
         <td>{{$item->created_at->toDateString()}}</td>
         <td>
