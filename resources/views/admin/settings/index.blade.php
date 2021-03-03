@@ -4,7 +4,7 @@
     @csrf
     <div class="form-group"><label for="">الشعار</label><input type="file" name="logo" class="form-control"></div>
     @if (setting('logo'))
-    <img src="{{asset('images/'.setting('logo'))}}" alt="">
+    <img width="100" height="100" src="{{asset('images/'.setting('logo'))}}" alt="">
     @endif
     <div class="form-group"><label for="">اسم الموقع</label><input type="text" name="site_name" value="{{setting('site_name')}}" class="form-control"></div>
     <div class="form-group"><label for="">ادارة</label><input type="text" name="manger" value="{{setting('manger')}}" class="form-control"></div>
