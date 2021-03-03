@@ -1,0 +1,75 @@
+@font-face{
+    font-family:'Monadi.ttf' ;
+    src: url('../fonts/Monadi.ttf');
+}
+@font-face{
+    font-family:'NotoKufiArabic-Regular.ttf' ;
+    src: url('../fonts/NotoKufiArabic-Regular.ttf');
+}
+body{
+    font-family:'NotoKufiArabic-Regular.ttf' ;
+    
+}
+main{
+    margin: 15px !important;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+h1{
+    font-size: 24px;
+    font-family:'Monadi.ttf' ;
+   color: #2A3A4A;
+   padding-bottom: 5px;
+   border-bottom: 2px solid #707070;
+}
+.table-1 td ,.table-1 th {
+    border: none !important;
+}
+ table tr{
+    border-bottom: 1px solid red;
+
+ }
+.first th {
+    background-color: #67C2C0;
+}
+.table-bordered{
+    border: none !important;
+}
+.bank th{
+    background-color: #539BF9;
+    color: #fff;
+}
+.bank td{
+    background-color: #F5F5F5;
+    border: none;
+}
+
+table{
+    border-spacing:5px;
+     border-collapse: separate;
+     
+}
+.maneger {
+    margin-top:100px;
+}
+.maneger p{
+    font-family:'Monadi.ttf' ;
+    font-size: 18px;
+    font-weight: 500;
+}
+.maneger p:last-of-type{
+    font-size: 26px;
+}
+
+.footer{
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.footer p{
+    margin: 5px 0 !important;
+}
+.footer p i{
+  color: #ABBAC3;
+}
