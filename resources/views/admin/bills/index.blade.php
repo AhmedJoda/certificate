@@ -21,7 +21,7 @@
         <td>{{$item->created_at->toDateString()}}</td>
         <td>
             <a target="_blank" class="btn btn-secondary" href="{{ url('services?bill_id='.$item->id) }}"">الخدمات</a>
-            <a class="btn btn-info" href="{{ route('bills.show',$item->id) }}"">عرض</a>
+            <a target="_blank" class="btn btn-info" href="{{ route('bills.show',$item->id) }}"">عرض</a>
             <a class="btn btn-primary" href="{{ route('bills.edit',$item->id) }}"">تعديل</a>
             <form method="POST" action="{{ route('bills.destroy',$item->id) }}">
                 {{ csrf_field() }}
