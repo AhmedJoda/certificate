@@ -11,6 +11,7 @@
     <div class="form-group"><label for="">الجوال</label><input type="text" name="phone" value="{{setting('phone')}}" class="form-control"></div>
     <div class="form-group"><label for="">الرابط</label><input type="text" name="link" value="{{setting('link')}}" class="form-control"></div>
     <div class="form-group"><label for="">البريد الالكتروني</label><input type="text"  name="email"  value="{{setting('email')}}" class="form-control"></div>
+    <div class="form-group"><label for="">رسالة اسفل الخدمات</label><textarea  name="msg" class="form-control">{{setting('msg')}}</textarea></div>
     <div class="form-group"><label for="">تشغيل الموقع</label>
         <input type="hidden" name="active" value="0" />
         <input type="checkbox" name="active" {{setting('active') ? 'checked' : ''}} value="1" class="form-control">

@@ -87,10 +87,7 @@
                 </div>
             </div>
             <p class="text-left" style="color: #F10909; font-weight: 600;">إجمالي الفاتورة {{$bill->total}} س.ر</p>
-            <p class="text-right" style="margin-bottom: 0 !important;"><span style="color: #F10909;">* </span>الفاتورة
-                لا
-                تشمل خدمات الدعم الفني</p>
-            <p class="text-right"><span style="color: #F10909;">* </span>الفاتورة لا تشمل خدمات الدعم الفني</p>
+            <p class="text-right"><span style="color: #F10909;"> </span>{{setting('msg')}}</p>
             <hr style=" border: 1px solid #707070;">
         </div>
 
