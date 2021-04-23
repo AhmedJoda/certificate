@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Bank extends Model
+class GoldenCertificate extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','number','eban'];
+
+    protected $guarded = [];
 }

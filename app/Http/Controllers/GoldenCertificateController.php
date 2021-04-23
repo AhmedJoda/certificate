@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Service;
+use App\Models\GoldenCertificate;
 use Illuminate\Http\Request;
 
-class ServicesController extends Controller
+class GoldenCertificateController extends Controller
 {
-     /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('admin.services.index');
-
+        return view('admin.golden_certificates.index');
     }
 
     /**
@@ -25,7 +24,7 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        return view('admin.services.create');
+        return view('admin.golden_certificates.create');
     }
 
     /**
@@ -36,8 +35,8 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        Service::create($request->except('_token'));
-        return redirect(route('bills.index'));
+        GoldenCertificate::create($request->except('_token'));
+        return redirect(route('golden_certificates.index'));
     }
 
     /**
@@ -59,8 +58,8 @@ class ServicesController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.services.edit',['edit' => Service::find($id)]);
 
+        return view('admin.golden_certificates.edit', ['edit' => GoldenCertificate::find($id)]);
     }
 
     /**
@@ -72,8 +71,8 @@ class ServicesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Service::find($id)->update($request->except('_token','_method'));
-        return redirect(route('bills.index'));
+        GoldenCertificate::find($id)->update($request->except('_token', '_method'));
+        return redirect(route('golden_certificates.index'));
     }
 
     /**
@@ -84,7 +83,7 @@ class ServicesController extends Controller
      */
     public function destroy($id)
     {
-        Service::find($id)->delete();
-        return redirect(route('bills.index'));
+        GoldenCertificate::find($id)->delete();
+        return redirect(route('golden_certificates.index'));
     }
 }

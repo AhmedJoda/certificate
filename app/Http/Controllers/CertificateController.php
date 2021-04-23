@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Bank;
+use App\Models\Certificate;
 use Illuminate\Http\Request;
 
-class BanksController extends Controller
+class CertificateController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class BanksController extends Controller
      */
     public function index()
     {
-        return view('admin.banks.index');
-
+        return view('admin.certificates.index');
     }
 
     /**
@@ -25,7 +24,7 @@ class BanksController extends Controller
      */
     public function create()
     {
-        return view('admin.banks.create');
+        return view('admin.certificates.create');
     }
 
     /**
@@ -36,8 +35,8 @@ class BanksController extends Controller
      */
     public function store(Request $request)
     {
-        Bank::create($request->except('_token'));
-        return redirect(route('banks.index'));
+        Certificate::create($request->except('_token'));
+        return redirect(route('certificates.index'));
     }
 
     /**
@@ -60,8 +59,7 @@ class BanksController extends Controller
     public function edit($id)
     {
 
-        return view('admin.banks.edit',['edit' => Bank::find($id)]);
-
+        return view('admin.certificates.edit', ['edit' => Certificate::find($id)]);
     }
 
     /**
@@ -73,8 +71,8 @@ class BanksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Bank::find($id)->update($request->except('_token','_method'));
-        return redirect(route('banks.index'));
+        Certificate::find($id)->update($request->except('_token', '_method'));
+        return redirect(route('certificates.index'));
     }
 
     /**
@@ -85,7 +83,7 @@ class BanksController extends Controller
      */
     public function destroy($id)
     {
-        Bank::find($id)->delete();
-        return redirect(route('banks.index'));
+        Certificate::find($id)->delete();
+        return redirect(route('certificates.index'));
     }
 }

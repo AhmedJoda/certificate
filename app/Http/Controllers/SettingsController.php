@@ -37,10 +37,30 @@ class SettingsController extends Controller
     public function store(Request $request)
     {
         $data = $request->except('_token');
-        if($request->logo){
-        $imageName = time().'.'.$request->logo->extension();
-        $request->logo->move(public_path('images'), $imageName);
-        $data['logo'] =  $imageName;
+        if ($request->logo) {
+            $imageName = time() . '.' . $request->logo->extension();
+            $request->logo->move(public_path('images'), $imageName);
+            $data['logo'] =  $imageName;
+        }
+        if ($request->logo1) {
+            $imageName = time() . '.' . $request->logo1->extension();
+            $request->logo1->move(public_path('images'), $imageName);
+            $data['logo1'] =  $imageName;
+        }
+        if ($request->logo2) {
+            $imageName = time() . '.' . $request->logo2->extension();
+            $request->logo2->move(public_path('images'), $imageName);
+            $data['logo2'] =  $imageName;
+        }
+        if ($request->seal) {
+            $imageName = time() . '.' . $request->seal->extension();
+            $request->seal->move(public_path('images'), $imageName);
+            $data['seal'] =  $imageName;
+        }
+        if ($request->signature) {
+            $imageName = time() . '.' . $request->signature->extension();
+            $request->signature->move(public_path('images'), $imageName);
+            $data['signature'] =  $imageName;
         }
         setting($data)->save();
         return redirect(route('settings.index'));

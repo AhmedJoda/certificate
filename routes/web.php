@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\BanksController;
-use App\Http\Controllers\BillsController;
-use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\GoldenCertificateController;
 use App\Http\Controllers\SettingsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +17,15 @@ use App\Http\Controllers\SettingsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
 
-Route::middleware('auth')->group(function(){
+Route::middleware('auth')->group(function () {
     // admin routes
     Route::get('/', [HomeController::class, 'index']);
     Route::resource('/settings', SettingsController::class);
-    Route::resource('/bills', BillsController::class);
-    Route::resource('/banks', BanksController::class);
-    Route::resource('/services', ServicesController::class);
+    Route::resource('/certificates', CertificateController::class);
+    Route::resource('/golden-certificates', GoldenCertificateController::class);
     // end admin routes
 });
 
@@ -33,6 +33,3 @@ Route::middleware('auth')->group(function(){
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-

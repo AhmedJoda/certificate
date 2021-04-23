@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBanksTable extends Migration
+class CreateGoldenCertificatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateBanksTable extends Migration
      */
     public function up()
     {
-        Schema::create('banks', function (Blueprint $table) {
+        Schema::create('golden_certificates', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('number');
-            $table->string('eban');
+            $table->string("main_title");
+            $table->string("epithet");
+            $table->string("name");
+            $table->string("message");
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateBanksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('banks');
+        Schema::dropIfExists('golden_certificates');
     }
 }
