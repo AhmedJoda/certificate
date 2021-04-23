@@ -2,6 +2,8 @@
 @section('content')
 <div class="container">
     <form class="form-inline d-flex justify-content-around" action="{{route('settings.store')}}" method="POST" enctype="multipart/form-data">
+        <div class="form-group m-4"><label class="m-1" for="">اسم الموقع:</label><input type="text" name="site_name" value="{{setting('site_name')}}" class="form-control"></div>
+
         @csrf
         <div class="form-group m-4"><label class="m-1" for="">شعار المدرسة:</label><input type="file" name="logo" class="form-control"></div>
         @if (setting('logo'))
