@@ -15,10 +15,10 @@ class CreateGoldenCertificatesTable extends Migration
     {
         Schema::create('golden_certificates', function (Blueprint $table) {
             $table->id();
-            $table->string("main_title");
-            $table->string("epithet");
-            $table->string("name");
-            $table->string("message");
+            $table->string("main_title")->nullable();
+            $table->string("epithet")->nullable();
+            $table->string("name")->nullable();
+            $table->string("message")->nullable();
             $table->timestamps();
         });
     }

@@ -15,14 +15,14 @@ class CreateCertificatesTable extends Migration
     {
         Schema::create('certificates', function (Blueprint $table) {
             $table->id();
-            $table->string("main_title");
-            $table->string("sub_title");
-            $table->string("epithet1");
-            $table->string("name1");
-            $table->string("epithet2");
-            $table->string("name2");
-            $table->string("message");
-            $table->string("color");
+            $table->string("main_title")->nullable();
+            $table->string("sub_title")->nullable();
+            $table->string("epithet1")->nullable();
+            $table->string("name1")->nullable();
+            $table->string("epithet2")->nullable();
+            $table->string("name2")->nullable();
+            $table->string("message")->nullable();
+            $table->string("color")->nullable();
             $table->timestamps();
         });
     }

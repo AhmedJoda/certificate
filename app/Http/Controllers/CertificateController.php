@@ -47,7 +47,7 @@ class CertificateController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('admin.certificates.show', ['show' => Certificate::find($id)]);
     }
 
     /**

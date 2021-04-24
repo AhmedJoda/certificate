@@ -16,7 +16,7 @@
         <div class="certifate1_container">
             <div class="certificate_logo">
                 @if(setting('logo1'))
-                <img src="{{asset('images/'.setting('logo1'))}}" alt="madrasati">
+                <img src="{{asset('images/'.setting('logo'))}}" alt="madrasati">
                 @endif
                 @if(setting('logo2'))
                 <img src="{{asset('images/'.setting('logo2'))}}" alt="Ministry of Education_logo">
@@ -36,21 +36,16 @@
                     {{$show->sub_title}}
                 </p>
                 <div class="input-group">
-                    <div class="name_certificate_holder">
-                        <span class="sr-name">{{$show->name1}}/</span>
-                        <span class="the-name">{{$show->epithet1}}</span>
-                    </div>
+                    <p class="name_certificate_holder">{{$show->name1}}</p>
+                    <span>/ {{$show->epithet1}}</span>
                 </div>
                 @if($show->epithet2 and $show->name2)
                 <div class="input-group">
-                    <div class="name_certificate_holder">
-                        <span class="sr-name">{{$show->name2}}/</span>
-                        <span class="the-name">{{$show->epithet2}}</span>
-                    </div>
+                    <p class="name_certificate_holder">{{$show->name2}}</p>
+                    <span>/ {{$show->epithet2}}</span>
                 </div>
                 @endif
                 <p class="Gratitude_text">
-
                     {{$show->message}}
                 </p>
             </div>
@@ -59,14 +54,18 @@
                 <p>
                     {{setting('name')}}
                 </p>
+                @if(setting('seal'))
+                <img src="{{asset('images/'.setting('signature'))}}" alt="Signature">
+                @endif
+            </div>
+            <div class="Seal">
+                @if(setting('seal'))
+                <img src="{{asset('images/'.setting('seal'))}}" alt="Seal">
+                @endif
 
             </div>
-            @if(setting('seal'))
-            <div class="Seal">
-                <img src="{{asset('images/'.setting('signature'))}}" alt="Seal">
-            </div>
-            @endif
         </div>
+
     </section>
 </body>
 
