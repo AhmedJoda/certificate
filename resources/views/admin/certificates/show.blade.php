@@ -63,7 +63,7 @@
             </div>
             @if(setting('seal'))
             <div class="Seal">
-                <img src="{{asset('images/'.setting('signature'))}}" alt="Seal">
+                <img src="{{asset('images/'.setting('seal'))}}" alt="Seal">
             </div>
             @endif
         </div>
