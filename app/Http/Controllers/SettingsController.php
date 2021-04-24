@@ -38,28 +38,28 @@ class SettingsController extends Controller
     {
         $data = $request->except('_token');
         if ($request->logo) {
-            $imageName = time() . '.' . $request->logo->extension();
-            $request->logo->move(public_path('logo'), $imageName);
+            $imageName =  'logo' . '.' . $request->logo->extension();
+            $request->logo->move(public_path('images'), $imageName);
             $data['logo'] =  $imageName;
         }
         if ($request->logo1) {
-            $imageName = time() . '.' . $request->logo1->extension();
-            $request->logo1->move(public_path('logo1'), $imageName);
+            $imageName =  'logo1' . '.' . $request->logo1->extension();
+            $request->logo1->move(public_path('images'), $imageName);
             $data['logo1'] =  $imageName;
         }
         if ($request->logo2) {
-            $imageName = time() . '.' . $request->logo2->extension();
-            $request->logo2->move(public_path('logo2'), $imageName);
+            $imageName =  'logo2' . '.' . $request->logo2->extension();
+            $request->logo2->move(public_path('images'), $imageName);
             $data['logo2'] =  $imageName;
         }
         if ($request->seal) {
-            $imageName = time() . '.' . $request->seal->extension();
-            $request->seal->move(public_path('seal'), $imageName);
+            $imageName =  'seal' . '.' . $request->seal->extension();
+            $request->seal->move(public_path('images'), $imageName);
             $data['seal'] =  $imageName;
         }
         if ($request->signature) {
-            $imageName = time() . '.' . $request->signature->extension();
-            $request->signature->move(public_path('signature'), $imageName);
+            $imageName =  'signature' . '.' . $request->signature->extension();
+            $request->signature->move(public_path('images'), $imageName);
             $data['signature'] =  $imageName;
         }
         setting($data)->save();

@@ -15,14 +15,14 @@
     <section id="certificate">
         <div class="certifate1_container">
             <div class="certificate_logo">
-                @if(setting('logo1'))
+                @if(setting('logo'))
                 <img src="{{asset('images/'.setting('logo'))}}" alt="madrasati">
                 @endif
-                @if(setting('logo2'))
-                <img src="{{asset('images/'.setting('logo2'))}}" alt="Ministry of Education_logo">
+                @if(setting('logo1'))
+                <img src="{{asset('images/'.setting('logo1'))}}" alt="Ministry of Education_logo">
                 @endif
-                @if(setting('logo3'))
-                <img src="{{asset('images/'.setting('logo3'))}}" alt="Go back">
+                @if(setting('logo2'))
+                <img src="{{asset('images/'.setting('logo2'))}}" alt="Go back">
                 @endif
             </div>
             <div class="certificate_title">
