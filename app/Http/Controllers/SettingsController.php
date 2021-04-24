@@ -37,29 +37,29 @@ class SettingsController extends Controller
     public function store(Request $request)
     {
         $data = $request->except('_token');
-        if ($request->logo1) {
+        if ($request->logo) {
             $imageName = time() . '.' . $request->logo->extension();
-            $request->logo1->move(public_path('images'), $imageName);
+            $request->logo->move(public_path('logo'), $imageName);
+            $data['logo'] =  $imageName;
+        }
+        if ($request->logo1) {
+            $imageName = time() . '.' . $request->logo1->extension();
+            $request->logo1->move(public_path('logo1'), $imageName);
             $data['logo1'] =  $imageName;
         }
         if ($request->logo2) {
             $imageName = time() . '.' . $request->logo2->extension();
-            $request->logo2->move(public_path('images'), $imageName);
+            $request->logo2->move(public_path('logo2'), $imageName);
             $data['logo2'] =  $imageName;
-        }
-        if ($request->logo3) {
-            $imageName = time() . '.' . $request->logo3->extension();
-            $request->logo3->move(public_path('images'), $imageName);
-            $data['logo3'] =  $imageName;
         }
         if ($request->seal) {
             $imageName = time() . '.' . $request->seal->extension();
-            $request->seal->move(public_path('images'), $imageName);
+            $request->seal->move(public_path('seal'), $imageName);
             $data['seal'] =  $imageName;
         }
         if ($request->signature) {
             $imageName = time() . '.' . $request->signature->extension();
-            $request->signature->move(public_path('images'), $imageName);
+            $request->signature->move(public_path('signature'), $imageName);
             $data['signature'] =  $imageName;
         }
         setting($data)->save();
