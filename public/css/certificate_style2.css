@@ -17,7 +17,7 @@
   height: 100%;
   padding-bottom: 70px;
   padding-top: 20px;
-  background-image: url(../image/certificate.png);
+  background-image: url(../image/certificate2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -302,22 +302,21 @@
     display: inline-block;
     margin: 5px;
     margin-top: 100px;
-
   }
   .certifate1_container {
     position: relative;
   }
-  .certifate1_container .certificate_logo{
+  .certifate1_container .certificate_logo {
     display: block;
   }
-  .certifate1_container .certificate_title{
+  .certifate1_container .certificate_title {
     margin-top: -180px;
   }
-  .certifate1_container .certificate_logo img:nth-child(3){
+  .certifate1_container .certificate_logo img:nth-child(3) {
     display: block;
     margin-top: 0;
   }
-  .certifate1_container .Signature{
+  .certifate1_container .Signature {
     margin-top: 0;
   }
 }
@@ -352,7 +351,7 @@
     margin-top: 5px;
     display: block;
   }
-  .certifate1_container .certificate_logo{
+  .certifate1_container .certificate_logo {
     margin-left: 9%;
     margin-top: 120px;
   }
@@ -365,19 +364,19 @@
   .certifate1_container .certificate_text {
     margin-left: 0;
   }
-  .certifate1_container .certificate_title p{
+  .certifate1_container .certificate_title p {
     margin-right: 30px;
   }
-  .certifate1_container .certificate_text{
+  .certifate1_container .certificate_text {
     display: block;
     width: 90%;
     margin: auto;
   }
-  .certifate1_container .Signature{
+  .certifate1_container .Signature {
     margin-left: 0;
     text-align: center;
   }
-  .certifate1_container .Seal{
+  .certifate1_container .Seal {
     position: unset;
     margin-left: 80px;
   }
@@ -418,7 +417,7 @@
   }
   .certifate1_container .certificate_text h1 {
     font-size: 4rem;
-  } 
+  }
 }
 
 @media (max-width: 321px) {

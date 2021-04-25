@@ -40,6 +40,27 @@
         <li class="nav-item">
           <a href="#" class="nav-link ">
             <p>
+              شهادات شكر(تصميم 2)
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="{{route('certificate2s.index')}}" class="nav-link ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>الكل</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{route('certificate2s.create')}}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>اضافة جديد</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link ">
+            <p>
               (تصميم البرواز الذهبي)
             </p>
           </a>

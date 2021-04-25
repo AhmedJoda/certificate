@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\GoldenCertificate;
+use App\Models\Certificate2;
 use Illuminate\Http\Request;
 
-class GoldenCertificateController extends Controller
+class Certificate2Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class GoldenCertificateController extends Controller
      */
     public function index()
     {
-        return view('admin.golden_certificates.index');
+        return view('admin.certificate2s.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class GoldenCertificateController extends Controller
      */
     public function create()
     {
-        return view('admin.golden_certificates.create');
+        return view('admin.certificate2s.create');
     }
 
     /**
@@ -35,8 +35,8 @@ class GoldenCertificateController extends Controller
      */
     public function store(Request $request)
     {
-        GoldenCertificate::create($request->except('_token'));
-        return redirect(route('golden-certificates.index'));
+        Certificate2::create($request->except('_token'));
+        return redirect(route('certificate2s.index'));
     }
 
     /**
@@ -47,7 +47,7 @@ class GoldenCertificateController extends Controller
      */
     public function show($id)
     {
-        return view('admin.golden_certificates.show', ['show' => GoldenCertificate::find($id)]);
+        return view('admin.certificate2s.show', ['show' => Certificate2::find($id)]);
     }
 
     /**
@@ -59,7 +59,7 @@ class GoldenCertificateController extends Controller
     public function edit($id)
     {
 
-        return view('admin.golden_certificates.edit', ['edit' => GoldenCertificate::find($id)]);
+        return view('admin.certificate2s.edit', ['edit' => Certificate2::find($id)]);
     }
 
     /**
@@ -71,8 +71,8 @@ class GoldenCertificateController extends Controller
      */
     public function update(Request $request, $id)
     {
-        GoldenCertificate::find($id)->update($request->except('_token', '_method'));
-        return redirect(route('golden-certificates.index'));
+        Certificate2::find($id)->update($request->except('_token', '_method'));
+        return redirect(route('certificate2s.index'));
     }
 
     /**
@@ -83,7 +83,7 @@ class GoldenCertificateController extends Controller
      */
     public function destroy($id)
     {
-        GoldenCertificate::find($id)->delete();
-        return redirect(route('golden-certificates.index'));
+        Certificate2::find($id)->delete();
+        return redirect(route('certificate2s.index'));
     }
 }

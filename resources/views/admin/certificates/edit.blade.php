@@ -28,9 +28,6 @@
     <div class="form-group m-4"><label class="m-1" for="">الرسالة:</label>
         <textarea type="text" name="message" class="form-control">{{$edit->message}}</textarea>
     </div>
-    <div class="form-group m-4"><label class="m-1" for="">اللون:</label>
-        <input type="color" name="color" value="{{$edit->color}}">
-    </div>
     <input type="submit" value="حفظ" class="btn btn-primary">
 </form>
 @endsection
