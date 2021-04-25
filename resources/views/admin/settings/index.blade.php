@@ -20,9 +20,9 @@
     <div class="form-group m-4"><label class="m-1" for="">لقب المديرة:</label><input type="text" name="epithet" value="{{setting('epithet')}}" class="form-control"></div>
     <div class="form-group m-4"><label class="m-1" for="">اسم المديرة:</label><input type="text" name="name" value="{{setting('name')}}" class="form-control"></div>
     <!-- <div class="form-group m-4"><label class="m-1" for="">التوقيع:</label><input type="file" name="signature" class="form-control"></div> -->
-    @if (setting('signature'))
+    <!-- @if (setting('signature'))
     <img width="100" height="100" src="{{asset('images/'.setting('signature'))}}" alt="">
-    @endif
+    @endif -->
     <div class="form-group m-4"><label class="m-1" for="">الختم:</label><input type="file" name="seal" class="form-control"></div>
     @if (setting('seal'))
     <img width="100" height="100" src="{{asset('images/'.setting('seal'))}}" alt="">
