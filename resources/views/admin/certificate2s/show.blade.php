@@ -61,7 +61,7 @@
         </p>
       </div>
       <div class="Seal">
-        <img src="image/Seal.png" alt="Seal">
+        <img src="{{asset('images/'.setting('seal'))}}" alt="Seal">
       </div>
     </div>
 
