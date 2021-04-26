@@ -1,0 +1,25 @@
+certificate:
+    main_title
+    sub_title
+    epithet1
+    name1
+    epithet2
+    name2
+    message
+    color
+
+golden-certificate:
+    main_title
+    epithet_to
+    name_to
+    message
+
+settings:
+    text
+    epithet
+    name
+    logo
+    logo1
+    logo2
+    seal    
+    signature

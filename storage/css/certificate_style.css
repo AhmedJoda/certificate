@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#certificate{
+    width: 85%;
+    height:80vh;
+    margin: 3% auto;
+}
+.certifate1_container{
+    border-radius: 15px;
+    height: 100%;
+    background-image: url(../image/certificate.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.certifate1_container .certificate_logo{
+    position: absolute;
+    top: 6%;
+    left: 17%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: none;
+}
+.certifate1_container .certificate_logo img{
+    margin-right: 5rem;
+    width: 150px;
+    height: 90px;
+}
+.certifate1_container .certificate_logo img:nth-child(3) {
+    padding-top: 15px ;
+    height: 60px;
+}
+.certifate1_container .certificate_title{
+    position: absolute;
+    top: 6%;
+    right: 6%;
+
+}
+.certifate1_container .certificate_title p{
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.certifate1_container .certificate_text{
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    text-align: center;
+
+}
+.certifate1_container .certificate_text h1{
+    font-size: 5rem;
+    background: -webkit-linear-gradient(red, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.certifate1_container .certificate_text p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    color: #1c4161;
+    line-height: 1.2;
+    width: 66%;
+    font-family: 'Amiri', serif;
+}
+.certifate1_container .certificate_text .input-group{
+    margin-top: 0.7rem;
+}
+.certifate1_container .certificate_text .input-group .name_certificate_holder{
+    width: 40%;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 7px;
+    display: inline-block;
+    text-align: right;
+
+}
+.certifate1_container .certificate_text .input-group span{
+    margin-top: 13px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(212, 2, 2);
+}
+
+.certifate1_container .certificate_text .Gratitude_text{
+
+    margin-top: 1.5%;
+    margin-left: 33%;
+    width: 450px;
+    font-size: 22px;
+}
+.certifate1_container .certificate_text .Gratitude_text span{
+    font-size: 34px;
+}
+.certifate1_container .Signature{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: #1c4161;
+}
+.certifate1_container .Signature p{
+    margin-top: 1.2%;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 7px;
+    text-align: center;
+}
+.certifate1_container .Signature img{
+    width: 40%;
+   position: absolute;
+   top: 0;
+   
+}
+.btn-container{
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.btn-container #btn-download{
+    padding: 7px 15px;
+    background-color: #007bff;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-container #btn-download:hover{
+    background-color: #0069d9
+}
+.certifate1_container .Seal{
+    position: absolute;
+    right: 28%;
+    bottom: 4%;
+}

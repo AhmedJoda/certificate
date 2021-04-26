@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Thulth\ Bold.ttf");
+}
+#certificate {
+    /* width: 85%; */
+    margin: 3% auto;
+}
+.certifate1_container {
+    border-radius: 15px;
+    height: 100%;
+    padding-bottom: 70px;
+    padding-top: 20px;
+    background-image: url(../image/certificate.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: auto;
+}
+.certifate1_container .certificate_logo {
+    margin-top: 3%;
+    margin-left: 17%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: none;
+}
+.certifate1_container .certificate_logo img {
+    margin-left: -1rem;
+    margin-right: 2rem;
+    width: 150px;
+    height: 90px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.certifate1_container .certificate_logo img:nth-child(3) {
+    padding-top: 15px;
+    height: 60px;
+    margin-left: 10px;
+}
+.certifate1_container .certificate_title {
+    float: right;
+    margin-top: 13.5%;
+    margin-right: 5%;
+}
+.certifate1_container .certificate_title p {
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    font-family: "Amiri", serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-right: 120px;
+}
+.certifate1_container .certificate_text {
+    display: inline-block;
+    text-align: center;
+    margin-left: 4.9%;
+    margin-top: -60px;
+}
+.certifate1_container .certificate_text h1 {
+    font-size: 6rem;
+    background: -webkit-linear-gradient(red, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Reem Kufi", sans-serif;
+}
+.certifate1_container .certificate_text p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    color: #8b4513;
+    line-height: 1.2;
+    width: 66%;
+    font-family: "Amiri", serif;
+}
+.certifate1_container .certificate_text .input-group {
+    margin-top: 0.7rem;
+}
+.certifate1_container .certificate_text .input-group .name_certificate_holder {
+    /* width: 40%; */
+    font-size: 35px;
+    font-weight: 700;
+    padding: 7px;
+    display: inline-block;
+    /* text-align: right; */
+}
+.certifate1_container .certificate_text .input-group .sr-name {
+    margin-top: 13px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(212, 2, 2);
+}
+
+.certifate1_container .certificate_text .input-group .the-name {
+    font-family: "Amiri", serif;
+    color: #8b4513;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.certifate1_container .certificate_text .Gratitude_text {
+    width: 70%;
+    font-size: 22px;
+    padding: 15px 15px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+.certifate1_container .certificate_text .Gratitude_text span {
+    font-size: 34px;
+}
+.certifate1_container .Signature {
+    margin-top: -30px;
+    color: #8b4513;
+    text-align: center;
+    width: 14%;
+    margin-left: 9.1rem;
+    position: relative;
+}
+
+.certifate1_container .sig-img {
+    position: absolute;
+    top: -50px;
+    left: 40px;
+    max-height: 150px !important;
+}
+
+.certifate1_container .Signature p {
+    /* margin-top: 0.75rem; */
+    /* margin-bottom: 0rem; */
+    height: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 7px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.btn-container #btn-download {
+    padding: 7px 15px;
+    background-color: #8b4513;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-container #btn-download:hover {
+    background-color: #8b4513;
+}
+.certifate1_container .Seal {
+    position: absolute;
+    right: 18%;
+    bottom: 11%;
+}
+@media only screen and (min-width: 1010px) {
+    #certificate {
+        width: 95%;
+    }
+    .certifate1_container .certificate_logo {
+        margin-top: 4.7%;
+    }
+    .certifate1_container .certificate_logo img {
+        width: 120px;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: -9%;
+    }
+    .certifate1_container .certificate_text h1 {
+        font-size: 5rem;
+    }
+    .certifate1_container .certificate_text p {
+        font-size: 24px;
+        width: 85%;
+    }
+    .certifate1_container .certificate_text .Gratitude_text {
+        width: 55%;
+        font-size: 23px;
+        padding: 15px 25px;
+        margin-bottom: 12px;
+    }
+}
+@media only screen and (min-width: 1060px) {
+    #certificate {
+        width: 95%;
+    }
+    .certifate1_container .certificate_logo {
+        margin-top: 3.2%;
+    }
+    .certifate1_container .certificate_logo img {
+        width: 120px;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: -8%;
+    }
+    .certifate1_container .certificate_text {
+        margin-left: 0%;
+    }
+    .certifate1_container .certificate_text h1 {
+        font-size: 4rem;
+    }
+    .certifate1_container .certificate_text p {
+        font-size: 24px;
+        width: 65%;
+    }
+    .certifate1_container .certificate_text .Gratitude_text {
+        width: 90%;
+        font-size: 23px;
+        padding: 15px 25px;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #certificate {
+        width: 85%;
+    }
+    .certifate1_container .certificate_logo {
+        margin-top: 3%;
+    }
+    .certifate1_container .certificate_logo img {
+        width: 150px;
+    }
+    /* .certifate1_container .certificate_title {
+    margin-top: -6.5%;
+  } */
+    /* .certifate1_container .certificate_text {
+    margin-left: 4.9%;
+  } */
+    .certifate1_container .certificate_text h1 {
+        font-size: 6rem;
+    }
+    .certifate1_container .certificate_text p {
+        font-size: 24px;
+        width: 65%;
+    }
+    .certifate1_container .certificate_text .Gratitude_text {
+        width: 50%;
+        font-size: 23px;
+        padding: 15px 25px;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+    .certifate1_container .certificate_logo {
+        margin-left: 35%;
+    }
+    .certifate1_container .certificate_text {
+        margin-left: 7.9%;
+        /* margin-top: 7px; */
+    }
+    .certifate1_container .certificate_title {
+        margin-top: -110px;
+    }
+}
+
+@media only screen and (min-width: 2560px) and (max-width: 4000px) {
+    .certifate1_container .certificate_logo {
+        margin-left: 35%;
+    }
+    .certifate1_container .certificate_text {
+        margin-left: 20.9%;
+        margin-top: 20px;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .certifate1_container .certificate_title p {
+        margin-right: 95px;
+    }
+    .certifate1_container .certificate_text p {
+        width: 70%;
+    }
+    .certifate1_container .Seal {
+        right: 12%;
+    }
+}
+
+@media (max-width: 800px) {
+    .certifate1_container {
+        /* margin-left: 7%; */
+        padding-bottom: 150px;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: 83px;
+        margin-right: 0;
+    }
+    .certifate1_container .certificate_text {
+        margin-top: -2%;
+    }
+
+    .certifate1_container .certificate_text .Gratitude_text {
+        width: 90%;
+    }
+    .certifate1_container .certificate_logo img {
+        margin-right: 0;
+        display: inline-block;
+        margin: 5px;
+        margin-top: 100px;
+    }
+    .certifate1_container {
+        position: relative;
+    }
+    .certifate1_container .certificate_logo {
+        display: block;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: -180px;
+    }
+    .certifate1_container .certificate_logo img:nth-child(3) {
+        display: block;
+        margin-top: 0;
+    }
+    .certifate1_container .Signature {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 524px) {
+    #certificate {
+        width: 95%;
+    }
+    .certifate1_container .certificate_text h1 {
+        font-size: 4rem;
+    }
+    .certifate1_container .certificate_text p {
+        width: 86%;
+    }
+
+    .certifate1_container
+        .certificate_text
+        .input-group
+        .name_certificate_holder {
+        font-size: 28px;
+    }
+    .certifate1_container .certificate_text .input-group .sr-name {
+        font-size: 28px;
+    }
+    .certifate1_container .certificate_text .Gratitude_text {
+        width: 100%;
+    }
+    .certifate1_container .Seal {
+        right: 3%;
+    }
+    .certifate1_container .certificate_logo img {
+        margin-top: 5px;
+        display: block;
+    }
+    .certifate1_container .certificate_logo {
+        margin-left: 9%;
+        margin-top: 120px;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: -58.5%;
+    }
+    .certifate1_container .certificate_text {
+        margin-top: 6%;
+    }
+    .certifate1_container .certificate_text {
+        margin-left: 0;
+    }
+    .certifate1_container .certificate_title p {
+        margin-right: 30px;
+    }
+    .certifate1_container .certificate_text {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .certifate1_container .Signature {
+        margin-left: 0;
+        margin: auto;
+    }
+    .certifate1_container .Seal {
+        position: unset;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .certifate1_container .Seal {
+        position: unset;
+        margin-left: 27px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .certifate1_container .certificate_title {
+        margin-top: 0 !important;
+        float: none !important;
+    }
+    .certifate1_container .certificate_title p {
+        margin: auto;
+    }
+    .certifate1_container .certificate_logo img {
+        margin-right: 0 !important;
+    }
+    .certifate1_container .certificate_logo {
+        display: inline-block;
+        /* margin: auto; */
+        /* text-align: center; */
+        margin-top: 170px;
+    }
+    .certifate1_container .certificate_logo img {
+        width: 140px;
+        margin-right: 0;
+        margin-left: 70px !important;
+        margin: 5px;
+    }
+    .certifate1_container .certificate_title p {
+        width: 170px;
+        margin-top: 40px;
+    }
+    .certifate1_container .certificate_text h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .certifate1_container .certificate_title {
+        margin-top: 0 !important;
+        float: none !important;
+    }
+    .certifate1_container .certificate_title p {
+        margin: auto;
+    }
+    .certifate1_container .certificate_logo img {
+        margin-right: 0 !important;
+    }
+    .certifate1_container .certificate_logo {
+        display: inline-block;
+        /* margin: auto; */
+        /* text-align: center; */
+        margin-top: 170px;
+    }
+    .certifate1_container .certificate_logo img {
+        width: 140px;
+        margin-right: 0;
+        margin-left: 50px;
+        margin: 5px;
+    }
+    .certifate1_container .certificate_title p {
+        width: 170px;
+        margin-top: 40px;
+    }
+    .certifate1_container .certificate_text h1 {
+        font-size: 4rem;
+    }
+}
