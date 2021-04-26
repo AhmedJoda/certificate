@@ -30,12 +30,12 @@
                 </p>
                 <div class="Signature">
                     <h1>
-                        <!-- {{setting('epithet')}} -->
-                        kljjkl
+                        {{setting('epithet')}}
+
                     </h1>
                     <p>
-                        <!-- {{setting('name')}} -->
-                        hgfgfg
+                        {{setting('name')}}
+
                     </p>
                 </div>
             </div>
