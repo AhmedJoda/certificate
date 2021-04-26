@@ -50,12 +50,12 @@
                     {{setting('name')}}
                 </p>
                 @if(setting('signature'))
-                <img width="200" height="200" class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
+                <img width="150" height="150" class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
                 @endif
             </div>
             <div class="Seal">
                 @if(setting('seal'))
-                <img width="200" height="200" src="{{asset('images/'.setting('seal'))}}" alt="Seal">
+                <img width="150" height="150" src="{{asset('images/'.setting('seal'))}}" alt="Seal">
                 @endif
             </div>
         </div>
