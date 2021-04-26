@@ -30,9 +30,9 @@
 .minst-img img {
     position: absolute;
     height: 100px;
-    left: 21%;
+    left: 22%;
     transform: translate(-21%, 0);
-    top: 96px;
+    top: 120px;
 }
 
 .certifate1_container .certificate_logo {
@@ -81,7 +81,7 @@
     color: #000;
     font-family: "Aref Ruqaa", serif;
     margin-bottom: -20px;
-    margin-top: 20px;
+    margin-top: 95px;
 }
 .certifate1_container .certificate_text p {
     text-align: center;
@@ -133,7 +133,7 @@
     margin-top: -30px;
     color: #1c4161;
     /* margin-left: 9.1rem; */
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     margin-top: 20px;
     position: relative;
 }
