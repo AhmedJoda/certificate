@@ -19,7 +19,7 @@
         <li class="nav-item">
           <a href="#" class="nav-link ">
             <p>
-              شهادات شكر
+              شهادات شكر (للمعلمات)
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -40,7 +40,7 @@
         <li class="nav-item">
           <a href="#" class="nav-link ">
             <p>
-              شهادات شكر(تصميم 2)
+              شهادات شكر(للطلاب)
             </p>
           </a>
           <ul class="nav nav-treeview">
