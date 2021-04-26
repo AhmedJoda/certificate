@@ -37,15 +37,15 @@
         </p>
         <div class="input-group">
           <div class="name_certificate_holder">
-            <span class="sr-name">{{$show->name1}}/</span>
-            <span class="the-name">{{$show->epithet1}}</span>
+            <span class="sr-name">{{$show->epithet1}}/</span>
+            <span class="the-name">{{$show->name1}}</span>
           </div>
         </div>
         @if($show->epithet2 and $show->name2)
         <div class="input-group">
           <div class="name_certificate_holder">
-            <span class="sr-name">{{$show->name2}}/</span>
-            <span class="the-name">{{$show->epithet2}}</span>
+            <span class="sr-name">{{$show->epithet2}}/</span>
+            <span class="the-name">{{$show->name2}}</span>
           </div>
         </div>
         @endif
@@ -61,7 +61,7 @@
         </p>
       </div>
       <div class="Seal">
-        <img src="{{asset('images/'.setting('seal'))}}" alt="Seal">
+        <img height="100" width="100" src="{{asset('images/'.setting('seal'))}}" alt="Seal">
       </div>
     </div>
 

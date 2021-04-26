@@ -36,7 +36,7 @@ class SettingsController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->except('_token');
+        $data = $request->except('_token', 'logo', 'logo1', 'logo2', 'seal', 'signature');
         if ($request->logo) {
             $imageName =  'logo' . '.' . $request->logo->extension();
             $request->logo->move(public_path('images'), $imageName);
