@@ -142,7 +142,7 @@
     position: absolute;
     top: -30px;
     height: 120px;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, 0);
 }
 
@@ -200,6 +200,7 @@
     }
     .certifate1_container .certificate_text h1 {
         font-size: 5rem;
+        margin-top: 90px;
     }
     .certifate1_container .certificate_text p {
         font-size: 24px;
@@ -386,7 +387,7 @@
         height: 100px;
         left: 22%;
         transform: translate(-22%, 0);
-        top: 128px;
+        top: 110px;
     }
 }
 

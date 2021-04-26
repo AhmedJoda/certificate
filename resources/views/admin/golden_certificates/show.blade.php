@@ -31,13 +31,14 @@
                     {{$show->message}}
                 </p>
                 <div class="Signature">
-                    <h1>{{setting('epithet')}}</h1>
+                    <h1>
+                        <!-- {{setting('epithet')}} -->
+                        kljjkl
+                    </h1>
                     <p>
-                        {{setting('name')}}
+                        <!-- {{setting('name')}} -->
+                        hgfgfg
                     </p>
-                    @if(setting('signature'))
-                    <img class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
-                    @endif
                 </div>
             </div>
         </div>

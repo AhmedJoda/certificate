@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="{{asset('css/certificate_style.css')}}">
     <!-- fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
@@ -38,20 +39,24 @@
                         <span class="the-name">{{$show->name1}}</span>
                     </div>
                 </div>
-                <div class="input-group">
+                <!-- <div class="input-group">
                     <div class="name_certificate_holder">
                         <span class="sr-name">معلمه/</span>
                         <span class="the-name"> المتوسطة الاولي بالليث و تعليم الكبيرات</span>
                     </div>
-                </div>
+                </div> -->
                 <p class="Gratitude_text">
                     {{$show->message}}
                 </p>
             </div>
-            <div class="Signature">
-                <h1>{{setting('epithet')}}</h1>
+            <div class="Signature ">
+                <h1>
+                    <!-- {{setting('epithet')}} -->
+                    adfssdaf
+                </h1>
                 <p>
-                    {{setting('name')}}
+                    <!-- {{setting('name')}} -->
+                    testtesssssssssssss
                 </p>
                 @if(setting('signature'))
                 <img width="200" height="200" class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">

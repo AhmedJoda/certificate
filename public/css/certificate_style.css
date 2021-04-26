@@ -102,15 +102,15 @@
 
 .certifate1_container .certificate_text .input-group .the-name {
     font-family: "Amiri", serif;
-    color: #1c4161;
+    color: #deb887;
     font-weight: 900;
     line-height: 1.2;
 }
 
 .certifate1_container .certificate_text .Gratitude_text {
-    width: 42%;
+    width: 70%;
     font-size: 22px;
-    padding: 15px 25px;
+    padding: 15px 15px;
     margin-bottom: 12px;
     line-height: 1.2;
 }
@@ -120,6 +120,8 @@
 .certifate1_container .Signature {
     margin-top: -30px;
     color: #1c4161;
+    text-align: center;
+    width: 14%;
     margin-left: 9.1rem;
     position: relative;
 }
@@ -215,7 +217,7 @@
         width: 65%;
     }
     .certifate1_container .certificate_text .Gratitude_text {
-        width: 42%;
+        width: 90%;
         font-size: 23px;
         padding: 15px 25px;
         margin-bottom: 12px;
@@ -246,7 +248,7 @@
         width: 65%;
     }
     .certifate1_container .certificate_text .Gratitude_text {
-        width: 42%;
+        width: 50%;
         font-size: 23px;
         padding: 15px 25px;
         margin-bottom: 12px;
@@ -305,7 +307,7 @@
     }
 
     .certifate1_container .certificate_text .Gratitude_text {
-        width: 70%;
+        width: 90%;
     }
     .certifate1_container .certificate_logo img {
         margin-right: 0;
@@ -384,7 +386,7 @@
     }
     .certifate1_container .Signature {
         margin-left: 0;
-        text-align: center;
+        margin: auto;
     }
     .certifate1_container .Seal {
         position: unset;
