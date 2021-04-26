@@ -47,12 +47,10 @@
             </div>
             <div class="Signature ">
                 <h1>
-                    <!-- {{setting('epithet')}} -->
-                    adfssdaf
+                    {{setting('epithet')}}
                 </h1>
                 <p>
-                    <!-- {{setting('name')}} -->
-                    testtesssssssssssss
+                    {{setting('name')}}
                 </p>
                 @if(setting('signature'))
                 <img width="200" height="200" class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
