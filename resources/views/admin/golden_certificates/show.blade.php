@@ -14,19 +14,34 @@
 <body>
     <section id="certificate">
         <div class="certifate1_container">
+            <div class="minst-img">
+                @if(setting('logo1'))
+                <img src="{{asset('images/'.setting('logo1'))}}" alt="Ministry of Education_logo">
+                @endif
+            </div>
             <div class="certificate_text">
-                <h1>{{$show->main_title}}</h1>
+                <h1>شكر و تقدير</h1>
                 <div class="input-group">
                     <div class="name_certificate_holder">
-                        <span class="sr-name">{{$show->epithet}}/</span>
+                        <span class="sr-name">أ/</span>
                         <span class="the-name">{{$show->name}}</span>
                     </div>
                 </div>
                 <p class="Gratitude_text">
                     {{$show->message}}
                 </p>
+                <div class="Signature">
+                    <h1>{{setting('epithet')}}</h1>
+                    <p>
+                        {{setting('name')}}
+                    </p>
+                    @if(setting('signature'))
+                    <img class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
+                    @endif
+                </div>
             </div>
         </div>
+
     </section>
 </body>
 

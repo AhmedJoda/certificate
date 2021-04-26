@@ -24,7 +24,17 @@
     background-size: 100% 100%;
     position: relative;
     overflow: auto;
+    position: relative;
 }
+
+.minst-img img {
+    position: absolute;
+    height: 100px;
+    left: 21%;
+    transform: translate(-21%, 0);
+    top: 96px;
+}
+
 .certifate1_container .certificate_logo {
     margin-top: 3%;
     margin-left: 17%;
@@ -39,6 +49,7 @@
     height: 90px;
     margin-top: 40px;
 }
+
 .certifate1_container .certificate_logo img:nth-child(3) {
     padding-top: 15px;
     height: 60px;
@@ -97,7 +108,7 @@
     margin-top: 13px;
     font-size: 35px;
     font-weight: 700;
-    color: rgb(212, 2, 2);
+    color: #fff;
 }
 
 .certifate1_container .certificate_text .input-group .the-name {
@@ -105,6 +116,7 @@
     color: #000;
     font-weight: 900;
     line-height: 1.2;
+    color: #fff;
 }
 
 .certifate1_container .certificate_text .Gratitude_text {
@@ -120,8 +132,20 @@
 .certifate1_container .Signature {
     margin-top: -30px;
     color: #1c4161;
-    margin-left: 9.1rem;
+    /* margin-left: 9.1rem; */
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
 }
+
+.certifate1_container .Signature .sig-img {
+    position: absolute;
+    top: -30px;
+    height: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .certifate1_container .Signature p {
     /* margin-top: 0.75rem; */
     /* margin-bottom: 0rem; */
@@ -129,6 +153,12 @@
     font-size: 22px;
     font-weight: 700;
     padding: 7px;
+    color: #fff;
+}
+
+.certifate1_container .Signature h1 {
+    font-size: 18px !important;
+    margin-top: 8px;
 }
 
 .btn-container {
@@ -351,6 +381,13 @@
         .name_certificate_holder {
         margin-right: 60px;
     }
+    .minst-img img {
+        position: absolute;
+        height: 100px;
+        left: 22%;
+        transform: translate(-22%, 0);
+        top: 128px;
+    }
 }
 
 @media (max-width: 524px) {
@@ -427,6 +464,13 @@
         .input-group
         .name_certificate_holder {
         margin-right: 10px;
+    }
+    .minst-img img {
+        position: absolute;
+        height: 100px;
+        left: 19%;
+        transform: translate(-19%, 0);
+        top: 118px;
     }
 }
 

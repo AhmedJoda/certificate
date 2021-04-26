@@ -53,9 +53,14 @@
         <p>
           {{setting('name')}}
         </p>
+        @if(setting('signature'))
+        <img class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
+        @endif
       </div>
       <div class="Seal">
+        @if(setting('seal'))
         <img height="100" width="100" src="{{asset('images/'.setting('seal'))}}" alt="Seal">
+        @endif
       </div>
     </div>
 

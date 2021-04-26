@@ -7,12 +7,12 @@
     @csrf
     @method('put')
 
-    <div class="form-group m-4"><label class="m-1" for="">العنوان الرئيسي:</label>
+    <!-- <div class="form-group m-4"><label class="m-1" for="">العنوان الرئيسي:</label>
         <input type="text" name="main_title" value="{{$edit->main_title}}" class="form-control">
     </div>
     <div class="form-group m-4"><label class="m-1" for="">اللقب:</label>
         <input type="text" name="epithet" value="{{$edit->epithet}}" class="form-control">
-    </div>
+    </div> -->
     <div class="form-group m-4"><label class="m-1" for="">الاسم:</label>
         <input type="text" name="name" value="{{$edit->name}}" class="form-control">
     </div>
