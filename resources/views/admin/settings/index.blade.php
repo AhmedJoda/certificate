@@ -12,8 +12,8 @@
     @if (setting('logo1'))
     <img width="100" height="100" src="{{asset('images/'.setting('logo1'))}}" alt="">
     @endif
-    <div class="form-group m-4"><label class="m-1" for="">شعار إضافي:</label><input type="file" name="logo2" class="form-control"></div>
-    <!-- @if (setting('logo2'))
+    <!--<div class="form-group m-4"><label class="m-1" for="">شعار إضافي:</label><input type="file" name="logo2" class="form-control"></div>
+     @if (setting('logo2'))
     <img width="100" height="100" src="{{asset('images/'.setting('logo2'))}}" alt="">
     @endif -->
     <div class="form-group m-4"><label class="m-1" for="">نص التربية والتعليم:</label><textarea type="text" name="text" class="form-control">{{setting('text')}}</textarea></div>
