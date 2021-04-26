@@ -118,10 +118,12 @@
     font-size: 34px;
 }
 .certifate1_container .Signature {
-    margin-top: -30px;
+    margin-top: -40px;
     color: #1c4161;
-    margin-left: 9.1rem;
+    margin-left: 12rem;
     position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .certifate1_container .sig-img {
