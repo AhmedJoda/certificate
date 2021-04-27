@@ -473,3 +473,7 @@ input[type="text"] {
     width: 200px;
     font-family: "Amiri", serif;
 }
+
+.parent {
+    color: #009900;
+}
