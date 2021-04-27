@@ -62,7 +62,7 @@ class Certificate2Controller extends Controller
 
         imagettftext($image,  $size, $angle, $iw1 - $tw1, $ih1,  $darkblue, $font, $name1);
         imagettftext($image, $size, $angle, $iw2 - $tw2, $ih2,  $dargreenkblue, $font, $name2);
-        imagejpeg($image, url('images/' . $Certificate->name1 . $Certificate->id . '.jpeg'));
+        imagejpeg($image, 'images/' . $Certificate->name1 . $Certificate->id . '.jpeg');
 
 
 

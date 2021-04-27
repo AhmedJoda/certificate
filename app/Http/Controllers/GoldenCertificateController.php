@@ -53,7 +53,7 @@ class GoldenCertificateController extends Controller
         $box1 = imagettfbbox($size, $angle, $font, $name);
         $tw1 = abs($box1[6] - $box1[4]); // text width.
         imagettftext($image,  $size, $angle, $iw1 - $tw1, $ih1,  $navy, $font, $name);
-        imagejpeg($image, url('images/' . $Certificate->name . $Certificate->id . '.jpeg'));
+        imagejpeg($image, 'images/' . $Certificate->name . $Certificate->id . '.jpeg');
 
 
 
