@@ -23,7 +23,7 @@
                     {{setting('text')}}
                 </p>
             </div>
-            <div class="certificate_text">
+            <div class="certificate_text" dir="rtl">
                 <h1>شكر و تقدير</h1>
                 <p>
                     تتقدم إدارة المتوسطة الاولى و تعليم الكبيرات بالليث بباقات الشكر و التقدير و عبارات العرفان و التحايا و كلمات الفخر و الاعتزاز
@@ -31,13 +31,13 @@
                 <div class="input-group">
                     <div class="name_certificate_holder">
                         <span class="sr-name">للأستاذه/</span>
-                        <span class="the-name">{{$show->name1}}</span>
+                        <span class="the-name"><input type="text"></span>
                     </div>
                 </div>
                 <div class="input-group">
                     <div class="name_certificate_holder">
                         <span class="sr-name">وليه أمر الطالبه/</span>
-                        <span class="the-name">{{$show->name2}}</span>
+                        <span class="the-name"><input class="parent" type="text"></span>
                     </div>
                 </div>
                 <p class="Gratitude_text">
@@ -45,18 +45,11 @@
                 </p>
             </div>
             <div class="Signature">
-                <h1>{{setting('epithet')}}</h1>
-                <p>
-                    {{setting('name')}}
-                </p>
-                @if(setting('signature'))
-                <img width="150" height="150" class="sig-img" src="{{asset('images/'.setting('signature'))}}" alt="">
-                @endif
+
+                <img width="150" height="150" class="sig-img" src="{{asset('image/signature.png')}}" alt="">
             </div>
             <div class="Seal">
-                @if(setting('seal'))
-                <img width="150" height="150" src="{{asset('images/'.setting('seal'))}}" alt="Seal">
-                @endif
+                <img width="150" height="150" class="sig-img" src="{{asset('image/seal.png')}}" alt="Seal">
             </div>
         </div>
 

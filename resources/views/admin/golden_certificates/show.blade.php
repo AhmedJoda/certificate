@@ -20,9 +20,9 @@
             <div class="certificate_text">
                 <h1>شكر و تقدير</h1>
                 <div class="input-group">
-                    <div class="name_certificate_holder">
+                    <div class="name_certificate_holder" dir=rtl>
                         <span class="sr-name">أ/</span>
-                        <span class="the-name">{{$show->name}}</span>
+                        <span class="the-name"><input type="text"></span>
                     </div>
                 </div>
                 <p class="Gratitude_text">
@@ -30,12 +30,10 @@
                 </p>
                 <div class="Signature">
                     <h1>
-                        {{setting('epithet')}}
-
+                        قائده المدرسه
                     </h1>
                     <p>
-                        {{setting('name')}}
-
+                        فوزيه فيصل عبيد
                     </p>
                 </div>
             </div>

@@ -32,7 +32,7 @@
     height: 100px;
     left: 22%;
     transform: translate(-21%, 0);
-    top: 140px;
+    top: 160px;
 }
 
 .certifate1_container .certificate_logo {
@@ -151,13 +151,13 @@
     /* height: 40px; */
     font-size: 30px;
     font-weight: 700;
-    /* padding: 7px; */
-    color: #808080;
+    color: darkred;
 }
 
 .certifate1_container .Signature h1 {
     font-size: 30px !important;
-    /* margin-top: 8px; */
+    color: darkgreen;
+    margin-bottom: 1px;
 }
 
 .btn-container {
@@ -546,4 +546,13 @@
     .certifate1_container .certificate_text h1 {
         font-size: 4rem;
     }
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    font-size: 30pt;
+    width: 200px;
+    font-family: "Amiri", serif;
+    color: #0069d9;
 }

@@ -62,6 +62,7 @@
     text-align: center;
     margin-left: 4.9%;
     margin-top: -60px;
+    margin-bottom: 150px;
 }
 .certifate1_container .certificate_text h1 {
     font-size: 6rem;
@@ -128,9 +129,10 @@
 
 .certifate1_container .sig-img {
     position: absolute;
-    top: -50px;
-    left: 40px;
-    max-height: 150px !important;
+    top: -284px;
+    left: -164px;
+    width: 300px;
+    height: 271px;
 }
 
 .certifate1_container .Signature p {
@@ -462,4 +464,12 @@
     .certifate1_container .certificate_text h1 {
         font-size: 4rem;
     }
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    font-size: 30pt;
+    width: 200px;
+    font-family: "Amiri", serif;
 }
