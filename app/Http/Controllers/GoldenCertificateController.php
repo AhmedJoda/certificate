@@ -25,7 +25,7 @@ class GoldenCertificateController extends Controller
      */
     public function create()
     {
-        return view('admin.golden_certificates.create');
+        return view('admin.golden_certificates.create', ['create' => 1]);
     }
 
     /**

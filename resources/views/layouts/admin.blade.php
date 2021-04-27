@@ -19,7 +19,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 
 <body class="hold-transition sidebar-mini">
+
   <div class="wrapper">
+    @if(!(isset($show) || isset($create)))
+
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white">
       <!-- Left navbar links -->
@@ -38,6 +41,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+      @endif
 
       <!-- Main content -->
       <div class="content">
