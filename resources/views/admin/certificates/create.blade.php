@@ -12,7 +12,7 @@
     <div class="form-group m-4"><label class="m-1" for="">اللقب:</label>
         <input type="text" name="epithet1" value="{{old('epithet1')}}" class="form-control">
     </div> -->
-    <div class="form-group m-4"><label class="m-1" for="">اسم المعلمة :</label>
+    <div class="form-group m-4"><label class="m-1" for="">الاسم:</label>
         <input type="text" name="name1" value="{{old('name1')}}" class="form-control">
     </div>
     <!-- <div class="form-group m-4"><label class="m-1" for="">الدور:</label>
