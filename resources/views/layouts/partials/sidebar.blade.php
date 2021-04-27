@@ -24,10 +24,10 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{route('certificates.index')}}" class="nav-link ">
+              <!-- <a href="{{route('certificates.index')}}" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
                 <p>الكل</p>
-              </a>
+              </a> -->
             </li>
             <li class="nav-item">
               <a href="{{route('certificates.create')}}" class="nav-link">
@@ -44,12 +44,12 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="{{route('certificate2s.index')}}" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
                 <p>الكل</p>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="{{route('certificate2s.create')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
@@ -65,12 +65,12 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="{{route('golden-certificates.index')}}" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
                 <p>الكل</p>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="{{route('golden-certificates.create')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
@@ -79,14 +79,14 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="{{route('settings.index')}}" class="nav-link">
             <i class="nav-icon fas fa-sliders-h"></i>
             <p>
               الاعدادات
             </p>
           </a>
-        </li>
+        </li> -->
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

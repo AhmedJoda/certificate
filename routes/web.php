@@ -25,15 +25,15 @@ Route::middleware('auth')->group(function () {
     // admin routes
     Route::get('/', [HomeController::class, 'index']);
     Route::resource('/settings', SettingsController::class);
-    Route::resource('/certificates', CertificateController::class)->except('show');
-    Route::resource('/certificate2s', Certificate2Controller::class)->except('show');
-    Route::resource('/golden-certificates', GoldenCertificateController::class)->except('show');
+    Route::resource('/certificates', CertificateController::class)->except('show', 'create');
+    Route::resource('/certificate2s', Certificate2Controller::class)->except('show', 'create');
+    Route::resource('/golden-certificates', GoldenCertificateController::class)->except('show', 'create');
     // end admin routes
 });
 
-Route::resource('/certificates', CertificateController::class)->only('show');
-Route::resource('/certificate2s', Certificate2Controller::class)->only('show');
-Route::resource('/golden-certificates', GoldenCertificateController::class)->only('show');
+Route::resource('/certificates', CertificateController::class)->only('create', 'show');
+Route::resource('/certificate2s', Certificate2Controller::class)->only('create', 'show');
+Route::resource('/golden-certificates', GoldenCertificateController::class)->only('create', 'show');
 
 
 

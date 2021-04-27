@@ -1,45 +1,24 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/certificate_style3.css')}}">
-    <!-- fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>{{$show->name}}</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <section id="certificate">
-        <div class="certifate1_container">
-            <div class="minst-img">
-                <img src="{{asset('image/kisspng-ministry-of-education-saudi-arabia-school-saudi-gazette-5b145d91148646.9813660615280613290841.png')}}" alt="Ministry of Education_logo">
-            </div>
-            <div class="certificate_text">
-                <h1>شكر و تقدير</h1>
-                <div class="input-group">
-                    <div class="name_certificate_holder" dir=rtl>
-                        <span class="sr-name">أ/</span>
-                        <span class="the-name"><input type="text"></span>
-                    </div>
-                </div>
-                <p class="Gratitude_text">
-                    {{$show->message}}
-                </p>
-                <div class="Signature">
-                    <h1>
-                        قائده المدرسه
-                    </h1>
-                    <p>
-                        فوزيه فيصل عبيد
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section>
+    <div class="d-flex justify-content-center">
+        <img src="{{url('images/'.$show->name.$show->id .'.jpeg')}}" alt="">
+    </div>
+    <div class="m-3 d-flex justify-content-center">
+        <a class="btn btn-primary " href="{{url('images/'.$show->name.$show->id .'.jpeg')}}" download="">تحميل الشهادة</a>
+    </div>
 </body>
 
 </html>

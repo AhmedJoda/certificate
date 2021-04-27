@@ -14,7 +14,7 @@
       <td>{{$item->name}}</td>
       <td>
         <a class="btn btn-primary" href="{{ route('golden-certificates.show',$item->id) }}">عرض</a>
-        <a class=" btn btn-primary" href="{{ route('golden-certificates.edit',$item->id) }}">تعديل</a>
+        <!-- <a class=" btn btn-primary" href="{{ route('golden-certificates.edit',$item->id) }}">تعديل</a> -->
         <form method="POST" action="{{ route('golden-certificates.destroy',$item->id) }}" onsubmit="return confirm('هل متاكد من الحذف');">
           @csrf
           @method('delete')

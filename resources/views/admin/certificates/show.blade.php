@@ -1,60 +1,24 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>{{$show->name1}}</title>
+    <style>
 
-    <link rel="stylesheet" href="{{asset('css/certificate_style.css')}}">
-    <!-- fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    </style>
 </head>
 
 <body>
-    <section id="certificate">
-        <div class="certifate1_container">
-            <div class="certificate_logo">
-                <img src="{{asset('image/kisspng-ministry-of-education-saudi-arabia-school-saudi-gazette-5b145d91148646.9813660615280613290841.png')}}" alt="Ministry of Education_logo">
-                <img src="{{asset('image/madrasati.jpg')}}" alt="madrasati">
-            </div>
-            <div class="certificate_title">
-                <p>
-                    {{setting('text')}}
-                </p>
-            </div>
-            <div class="certificate_text">
-                <h1> شكر و تقدير</h1>
-                <p>
-                    تتقدم إدارة المتوسطة الاولى و تعليم الكبيرات بالليث بباقات الشكر و التقدير و عبارات العرفان و التحايا و كلمات الفخر و الاعتزاز
-                </p>
-                <div class="input-group" dir=rtl>
-                    <div class="name_certificate_holder">
-                        <span class="sr-name">للأستاذة/</span>
-                        <span class="the-name"><input type="text"></span>
-                    </div>
-                </div>
-                <!-- <div class="input-group">
-                    <div class="name_certificate_holder">
-                        <span class="sr-name">معلمه/</span>
-                        <span class="the-name"> المتوسطة الاولي بالليث و تعليم الكبيرات</span>
-                    </div>
-                </div> -->
-                <p class="Gratitude_text">
-                    {{$show->message}}
-                </p>
-            </div>
-            <div class="Signature ">
-                <img width="150" height="150" class="sig-img" src="{{asset('image/signature.png')}}" alt="">
-            </div>
-            <div class="Seal">
-                <img width="150" height="150" class="sig-img" src="{{asset('image/seal.png')}}" alt="Seal">
-            </div>
-        </div>
-
-
-    </section>
+    <div class="d-flex justify-content-center">
+        <img src="{{url('images/'.$show->name1.$show->id .'.jpeg')}}" alt="">
+    </div>
+    <div class="m-3 d-flex justify-content-center">
+        <a class="btn btn-primary " href="{{url('images/'.$show->name1.$show->id .'.jpeg')}}" download="">تحميل الشهادة</a>
+    </div>
 </body>
 
 </html>

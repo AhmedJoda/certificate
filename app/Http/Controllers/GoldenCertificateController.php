@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\GoldenCertificate;
 use Illuminate\Http\Request;
+use ArPHP\I18N\Arabic;
 
 class GoldenCertificateController extends Controller
 {
@@ -35,8 +36,28 @@ class GoldenCertificateController extends Controller
      */
     public function store(Request $request)
     {
-        GoldenCertificate::create($request->except('_token'));
-        return redirect(route('golden-certificates.index'));
+        $Certificate = GoldenCertificate::create($request->except('_token'));
+
+
+        $image = imagecreatefromjpeg('cert3.jpeg');
+        $black = imagecolorallocate($image, 0, 0, 0);
+        $blue  = imagecolorallocate($image, 0, 0, 255);
+        $navy  = imagecolorallocate($image, 0, 0, 125);
+        $size = 22;
+        $angle = 0;
+        $iw1 = 475; // image width.
+        $ih1 = 430; // image height.
+        $font = public_path('/fonts/Amiri-Bold.ttf');
+        $Arabic = new Arabic();
+        $name = $Arabic->utf8Glyphs($Certificate->name);
+        $box1 = imagettfbbox($size, $angle, $font, $name);
+        $tw1 = abs($box1[6] - $box1[4]); // text width.
+        imagettftext($image,  $size, $angle, $iw1 - $tw1, $ih1,  $navy, $font, $name);
+        imagejpeg($image, public_path('images/' . $Certificate->name . $Certificate->id . '.jpeg'));
+
+
+
+        return redirect(route('golden-certificates.show', $Certificate->id));
     }
 
     /**
