@@ -56,7 +56,7 @@ class CertificateController extends Controller
         $box1 = imagettfbbox($size, $angle, $font, $name1);
         $tw1 = abs($box1[6] - $box1[4]); // text width.
         imagettftext($image,  $size, $angle, $iw1 - $tw1, $ih1,  $darkblue, $font, $name1);
-        imagejpeg($image, public_path('images/' . $Certificate->name1 . $Certificate->id . '.jpeg'));
+        imagejpeg($image, url('images/' . $Certificate->name1 . $Certificate->id . '.jpeg'));
 
 
 
